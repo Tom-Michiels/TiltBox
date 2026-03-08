@@ -50,6 +50,8 @@ Print the enclosure parts in black PLA:
 
 ![CAD Model](pictures/cad.png)
 
+[Open in Onshape](https://cad.onshape.com/documents/1ea29db64e579952e6381490/w/44e133dfefb2de18973d13df/e/b5270f9dee790fa11f86224a?renderMode=0&uiState=69ad3dda5e52657494bd1281)
+
 ### 2. Laser Cutting
 
 Cut the following from the [wood and plexi.dxf](hardware/wood%20and%20plexi.dxf) file:
