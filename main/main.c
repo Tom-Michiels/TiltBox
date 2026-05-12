@@ -7,6 +7,7 @@
 #include "driver/rmt.h"
 #include "driver/i2c.h"
 #include "esp_system.h"
+#include "esp_random.h"
 
 // I2C config
 #define I2C_PORT        I2C_NUM_0
