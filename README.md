@@ -2,7 +2,7 @@
 
 ![TiltBox](pictures/IMG_2051.jpeg)
 
-A handheld retro game console with tilt controls, featuring 9 games on an 8x8 LED matrix. Designed at [Maakleerplek](https://maakleerplek.be).
+A handheld retro game console with tilt controls, featuring 15 games on an 8x8 LED matrix. Designed at [Maakleerplek](https://maakleerplek.be).
 
 ## Bill of Materials
 
@@ -104,7 +104,7 @@ Break the colored bricks at the top with a bouncing ball. Tilt left/right to mov
 Avoid falling obstacles. Tilt left/right to move your player at the bottom. Score increases as obstacles pass.
 
 ### 7. Scroll Text
-Displays scrolling text: "maakleerplek"
+Displays scrolling text: "github.com/Tom-Michiels/TiltBox"
 
 ### 8. Animation
 Cycles through animated patterns:
@@ -114,6 +114,24 @@ Cycles through animated patterns:
 
 ### 9. Tetris
 Classic falling block game. Tilt left/right to move pieces, tilt forward to rotate, tilt backward for fast drop.
+
+### 10. Pong
+1-player Pong against an AI opponent. Tilt left/right to move your paddle. Score increases with each volley. 3 misses and the game resets.
+
+### 11. Balance
+Keep a ball centered against random wind forces. The target zone shrinks over time, making it harder to stay alive. Pure tilt precision challenge.
+
+### 12. Catch
+Catch falling green items for points while avoiding red ones. Tilt left/right to move your basket. 3 lives — lose one for each red item caught.
+
+### 13. Target Practice
+Tilt a cursor to hit randomly appearing targets as fast as possible. 30-second timer. Tests raw tilt accuracy and speed.
+
+### 14. Sokoban
+Push-block puzzle game. Tilt to move your character and push blocks onto target positions. 8 levels of increasing difficulty.
+
+### 15. Marble Race
+Steer a marble along a scrolling track. Tilt left/right to stay on the path as speed increases. 3 lives — go off-track and you lose one.
 
 ## Building and Flashing
 
