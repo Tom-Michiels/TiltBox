@@ -19,6 +19,13 @@ Ensure the ESP-IDF environment is sourced before running commands (`source ~/esp
 
 ## Architecture
 
+The root project described below is the original ESP32-C3 TiltBox. The newer
+ESP32-S3 Voice PCB is separate: `hardware/voice-a/`, `firmware/voice-a/` and
+`cloud/`. Consult their READMEs. Build Voice with ESP-IDF 5.4.2 and
+`bash firmware/build-local.sh voice-a`; never flash hardware as part of a
+repository build or publication task. Keep credentials and local cloud data out
+of Git. Preserve the original files for users of the old hardware.
+
 TiltBox is an ESP32-C3 project driving an 8x8 WS2812 LED matrix with an ADXL345 accelerometer for tilt control. The entire application is in `main/main.c`.
 
 **Hardware interfaces:**

@@ -1,5 +1,33 @@
 # TiltBox
 
+## Latest version: TiltBox Voice
+
+The custom ESP32-S3 PCB version adds a bottom-facing microphone and voice-generated
+games while retaining the 8×8 LED grid and the walnut enclosure style.
+
+- [Hardware, assembly and validation status](hardware/voice-a/README.md)
+- [Printable STL files and laser-cut DXF files](hardware/voice-a/mechanical/)
+- [KiCad PCB and schematics](hardware/voice-a/pcb/TiltBox-Voice-A.kicad_pro)
+- [JLCPCB Gerbers, BOM and placement files](hardware/voice-a/jlcpcb/)
+- [Latest firmware source and flashing instructions](firmware/voice-a/README.md)
+- [Prebuilt Voice B firmware, 9 October 2026](firmware/voice-a/bin/)
+- [Self-hosted voice service and dashboard](cloud/README.md)
+- [Publication checks and version provenance](PUBLICATION-2026-10-26.md)
+
+Hardware: electronics **A.3**, enclosure **A.4**, manufacturing package **A.5**.
+Software: **Voice B (9 October 2026)**, for the same Voice A PCB; this is not a
+new PCB revision. Publication snapshot: 26 October 2026.
+
+These are prototype files, not a claim of production certification. See the
+hardware notes for completed checks and outstanding electrical tests. Do not use
+the original ESP32-C3 firmware or its wiring instructions for the Voice PCB.
+
+## Original TiltBox (ESP32-C3 / separate modules)
+
+The original files below remain available unchanged. The root `main/`,
+`CMakeLists.txt`, `sdkconfig` and the older files directly in `hardware/` belong
+to this original version, not TiltBox Voice.
+
 ![TiltBox](pictures/IMG_2051.jpeg)
 
 A handheld retro game console with tilt controls, featuring 9 games on an 8x8 LED matrix. Designed at [Maakleerplek](https://maakleerplek.be).

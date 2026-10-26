@@ -1,0 +1,39 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T20:10:56+0100",
+    "kicad_version": "9.0.4",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/d05f58d3-87f0-5bb2-8430-ae5dc4fad944",
+            "violations": []
+        },
+        {
+            "path": "/01 Power, charging and current limits/",
+            "uuid_path": "/d05f58d3-87f0-5bb2-8430-ae5dc4fad944/ab6136ce-cebf-54f4-bd58-2abb53be0283",
+            "violations": []
+        },
+        {
+            "path": "/02 Processor, USB and controls/",
+            "uuid_path": "/d05f58d3-87f0-5bb2-8430-ae5dc4fad944/0f70498e-fe8d-5836-b963-5b7b1abeb30a",
+            "violations": []
+        },
+        {
+            "path": "/03 Motion, voice input and test points/",
+            "uuid_path": "/d05f58d3-87f0-5bb2-8430-ae5dc4fad944/67af4dc7-80ac-579a-a32a-285df5c08451",
+            "violations": []
+        },
+        {
+            "path": "/04 LED chain 1-32/",
+            "uuid_path": "/d05f58d3-87f0-5bb2-8430-ae5dc4fad944/d6d4ece6-7bbe-5565-bedc-816769a3f4ba",
+            "violations": []
+        },
+        {
+            "path": "/05 LED chain 33-64/",
+            "uuid_path": "/d05f58d3-87f0-5bb2-8430-ae5dc4fad944/2cf106e7-60f2-57a5-9c8d-c5e442e38ddd",
+            "violations": []
+        }
+    ],
+    "source": "TiltBox-Voice-A.kicad_sch"
+}

@@ -1,0 +1,4286 @@
+{
+  "revision": "A.3",
+  "board_mm": 78,
+  "thickness_mm": 1.6,
+  "grid_pitch_mm": 8.328571428571427,
+  "gpio": {
+    "WAKE_N": 4,
+    "IMU_INT_N": 5,
+    "I2C_SDA": 6,
+    "I2C_SCL": 7,
+    "BAT_ADC": 8,
+    "LED_FAULT_N": 9,
+    "BOOST_EN": 10,
+    "LED_EN": 11,
+    "LED_DATA_3V3": 12,
+    "MIC_WS": 13,
+    "MIC_BCLK": 14,
+    "MIC_SD": 15,
+    "MIC_EN": 16,
+    "CHG_STAT1": 17,
+    "CHG_STAT2": 18,
+    "USB_DM": 19,
+    "USB_DP": 20,
+    "VBUS_SENSE": 21
+  },
+  "parts": [
+    {
+      "ref": "J1",
+      "value": "TYPE-C 16PIN 2MD(073)",
+      "footprint": "Connector_USB:USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A",
+      "lcsc": "C2765186",
+      "pins": {
+        "A1": "GND",
+        "A12": "GND",
+        "B1": "GND",
+        "B12": "GND",
+        "S1": "GND",
+        "A4": "VBUS",
+        "A9": "VBUS",
+        "B4": "VBUS",
+        "B9": "VBUS",
+        "A5": "CC1",
+        "B5": "CC2",
+        "A6": "USB_CON_DP",
+        "B6": "USB_CON_DP",
+        "A7": "USB_CON_DM",
+        "B7": "USB_CON_DM",
+        "A8": null,
+        "B8": null
+      },
+      "xy": [
+        18.259585,
+        -36.0
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "fb58a435-a725-5135-86de-bbab7f511f4a",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "J2",
+      "value": "S2B-PH-SM4-TB(LF)(SN)",
+      "footprint": "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal",
+      "lcsc": "C295747",
+      "pins": {
+        "1": "VBAT",
+        "2": "GND",
+        "MP": "GND"
+      },
+      "xy": [
+        -27,
+        -14
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "db31ffae-d1f6-5cd9-bba8-f9efca2557a0",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R1",
+      "value": "5k1",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25905",
+      "pins": {
+        "1": "CC1",
+        "2": "GND"
+      },
+      "xy": [
+        25.259585,
+        -36
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "83e46a37-0725-5bd1-8db6-bf73b22c10a7",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R2",
+      "value": "5k1",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25905",
+      "pins": {
+        "1": "CC2",
+        "2": "GND"
+      },
+      "xy": [
+        27.259585,
+        -33
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "36446566-8d6a-586c-9d40-1a788ef0cb48",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "D65",
+      "value": "USBLC6-2SC6",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "lcsc": "C2687116",
+      "pins": {
+        "1": "USB_CON_DP",
+        "2": "GND",
+        "3": "USB_CON_DM",
+        "4": "USB_CON_DM",
+        "5": "VBUS",
+        "6": "USB_CON_DP"
+      },
+      "xy": [
+        9.259585000000001,
+        -34
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "4520003e-2d1b-52d2-9200-c7b31942566a",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C65",
+      "value": "1u",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "lcsc": "C15849",
+      "pins": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "xy": [
+        29.5,
+        -36
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "5a6fe037-6fa8-5b13-a49e-67d45a865063",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R3",
+      "value": "22",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25092",
+      "pins": {
+        "1": "USB_CON_DM",
+        "2": "USB_DM"
+      },
+      "xy": [
+        1.5,
+        -26.98
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "logic",
+      "uuid": "e9b74bec-2184-55de-b7af-a90a59d55fa5",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R4",
+      "value": "22",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25092",
+      "pins": {
+        "1": "USB_CON_DP",
+        "2": "USB_DP"
+      },
+      "xy": [
+        1.5,
+        -28.25
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "logic",
+      "uuid": "58c7d512-f993-55b2-bb7d-b35cc57e8e5f",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "U2",
+      "value": "BQ25185DLHR",
+      "footprint": "Package_DFN_QFN:Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm",
+      "lcsc": "C19725033",
+      "pins": {
+        "1": "VSYS",
+        "2": "VBAT",
+        "3": "CHG_STAT2",
+        "4": "GND",
+        "5": "GND",
+        "6": "BAT_NTC",
+        "7": "CHG_ILIM",
+        "8": "CHG_ISET",
+        "9": "CHG_STAT1",
+        "10": "VBUS",
+        "11": "GND"
+      },
+      "xy": [
+        -22,
+        -25
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "33e1f873-a516-5e24-8575-25c98634fdfd",
+      "names": {
+        "1": "SYS",
+        "2": "BAT",
+        "3": "STAT2",
+        "4": "CE_N",
+        "5": "GND",
+        "6": "TS_MR",
+        "7": "ILIM_VSET",
+        "8": "ISET",
+        "9": "STAT1",
+        "10": "IN",
+        "11": "EP"
+      },
+      "types": {
+        "1": "power_out",
+        "2": "power_in",
+        "3": "open_collector",
+        "4": "input",
+        "5": "power_in",
+        "6": "input",
+        "7": "passive",
+        "8": "passive",
+        "9": "open_collector",
+        "10": "power_in",
+        "11": "passive"
+      }
+    },
+    {
+      "ref": "C66",
+      "value": "1u",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "lcsc": "C15849",
+      "pins": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "xy": [
+        -18.5,
+        -22
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "66168243-e787-571f-b50a-5f271e3f1671",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C67",
+      "value": "22u",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "lcsc": "C45783",
+      "pins": {
+        "1": "VSYS",
+        "2": "GND"
+      },
+      "xy": [
+        -26,
+        -21.5
+      ],
+      "angle": 180,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "d6793343-40be-51f9-b50a-a18b7fd5d25a",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C68",
+      "value": "1u",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "lcsc": "C15849",
+      "pins": {
+        "1": "VBAT",
+        "2": "GND"
+      },
+      "xy": [
+        -26,
+        -25
+      ],
+      "angle": 180,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "3e5e2d60-a523-519e-8c2e-d7ba2a0b6c00",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R5",
+      "value": "18k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25762",
+      "pins": {
+        "1": "CHG_ILIM",
+        "2": "GND"
+      },
+      "xy": [
+        -18.5,
+        -26.5
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "ab5b489a-43f5-5e33-9eea-16654d759ea6",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R6",
+      "value": "1k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C11702",
+      "pins": {
+        "1": "CHG_ISET",
+        "2": "GND"
+      },
+      "xy": [
+        -19,
+        -28
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "b48ce469-69d8-543b-bafd-2b8dd73161c2",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R7",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25744",
+      "pins": {
+        "1": "3V3",
+        "2": "CHG_STAT1"
+      },
+      "xy": [
+        -18,
+        -19.5
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "75ea27be-95d7-5da4-bea8-4a22b568b54a",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R8",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25744",
+      "pins": {
+        "1": "3V3",
+        "2": "CHG_STAT2"
+      },
+      "xy": [
+        -21,
+        -19.5
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "4687eebd-9504-5372-a7cd-3567d127affd",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "TH1",
+      "value": "SDNT1608X103F3435FTF",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "lcsc": "C525660",
+      "pins": {
+        "1": "BAT_NTC",
+        "2": "GND"
+      },
+      "xy": [
+        -8,
+        18
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "240294e5-220f-50c0-b0e9-c40fa4578495",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "U3",
+      "value": "TPS63031DSKR",
+      "footprint": "Package_SON:WSON-10-1EP_2.5x2.5mm_P0.5mm_EP1.2x2mm",
+      "lcsc": "C15516",
+      "pins": {
+        "1": "3V3",
+        "2": "BUCK_L2",
+        "3": "GND",
+        "4": "BUCK_L1",
+        "5": "VSYS",
+        "6": "VSYS",
+        "7": "GND",
+        "8": "VSYS",
+        "9": "GND",
+        "10": "3V3",
+        "11": "GND"
+      },
+      "xy": [
+        -9,
+        -25
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "0347ab0d-f9ce-5f70-8098-e6632b3f1950",
+      "names": {
+        "1": "VOUT",
+        "2": "L2",
+        "3": "PGND",
+        "4": "L1",
+        "5": "VIN",
+        "6": "EN",
+        "7": "PS_SYNC",
+        "8": "VINA",
+        "9": "GND",
+        "10": "FB",
+        "11": "EP"
+      },
+      "types": {
+        "1": "power_out",
+        "2": "passive",
+        "3": "power_in",
+        "4": "passive",
+        "5": "power_in",
+        "6": "input",
+        "7": "input",
+        "8": "power_in",
+        "9": "power_in",
+        "10": "input",
+        "11": "passive"
+      }
+    },
+    {
+      "ref": "L1",
+      "value": "FNR4018S1R5MT",
+      "footprint": "Inductor_SMD:L_Changjiang_FNR4018S",
+      "lcsc": "C167802",
+      "pins": {
+        "1": "BUCK_L1",
+        "2": "BUCK_L2"
+      },
+      "xy": [
+        -14.5,
+        -25
+      ],
+      "angle": 270,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "eb546ec8-5f5b-515e-b540-4a4923d3c0cb",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C69",
+      "value": "22u",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "lcsc": "C45783",
+      "pins": {
+        "1": "VSYS",
+        "2": "GND"
+      },
+      "xy": [
+        -10,
+        -30
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "1f535fca-d380-5521-9091-ff9b690cc084",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C70",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "lcsc": "C1525",
+      "pins": {
+        "1": "VSYS",
+        "2": "GND"
+      },
+      "xy": [
+        -8.5,
+        -22.2
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "df0d2e28-f293-5869-a2e6-9ef65af61845",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C71",
+      "value": "22u",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "lcsc": "C45783",
+      "pins": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "xy": [
+        -10,
+        -20
+      ],
+      "angle": 270,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "30dc4bef-e10d-52ac-bc78-18618c664ed5",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C72",
+      "value": "22u",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "lcsc": "C45783",
+      "pins": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "xy": [
+        -6,
+        -20
+      ],
+      "angle": 270,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "6d65142f-59f3-50a9-89ed-f7544b3765f7",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "U4",
+      "value": "TPS61023DRLR",
+      "footprint": "Package_TO_SOT_SMD:SOT-563",
+      "lcsc": "C919459",
+      "pins": {
+        "1": "BOOST_FB",
+        "2": "BOOST_EN",
+        "3": "VSYS",
+        "4": "GND",
+        "5": "BOOST_SW",
+        "6": "5V_RAW"
+      },
+      "xy": [
+        -23,
+        0
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "e1e49688-1721-5cd9-ab24-9a161ddeaab9",
+      "names": {
+        "1": "FB",
+        "2": "EN",
+        "3": "VIN",
+        "4": "GND",
+        "5": "SW",
+        "6": "VOUT"
+      },
+      "types": {
+        "1": "input",
+        "2": "input",
+        "3": "power_in",
+        "4": "power_in",
+        "5": "passive",
+        "6": "power_out"
+      }
+    },
+    {
+      "ref": "L2",
+      "value": "FNR4018S1R0MT",
+      "footprint": "Inductor_SMD:L_Changjiang_FNR4018S",
+      "lcsc": "C167801",
+      "pins": {
+        "1": "VSYS",
+        "2": "BOOST_SW"
+      },
+      "xy": [
+        -24,
+        -4.5
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "d93c1b53-1cd7-5129-83f9-1c51d08dd73b",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C73",
+      "value": "22u",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "lcsc": "C45783",
+      "pins": {
+        "1": "VSYS",
+        "2": "GND"
+      },
+      "xy": [
+        -28.5,
+        -3.4
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "d561a789-d09b-59c8-a834-c4f4fffbca37",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C74",
+      "value": "22u",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "lcsc": "C45783",
+      "pins": {
+        "1": "VSYS",
+        "2": "GND"
+      },
+      "xy": [
+        -28.5,
+        0.2
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "cd585144-8382-516a-a56c-63548400dd41",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C75",
+      "value": "22u",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "lcsc": "C45783",
+      "pins": {
+        "1": "5V_RAW",
+        "2": "GND"
+      },
+      "xy": [
+        -18,
+        -1.4
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "2e1f80de-53e6-53f9-97f3-6ec7403fbcfa",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C76",
+      "value": "22u",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "lcsc": "C45783",
+      "pins": {
+        "1": "5V_RAW",
+        "2": "GND"
+      },
+      "xy": [
+        -18,
+        1.4
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "a694bdfb-4c17-51dd-b402-0db68eb37c5f",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R9",
+      "value": "732k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C27016",
+      "pins": {
+        "1": "5V_RAW",
+        "2": "BOOST_FB"
+      },
+      "xy": [
+        -25.5,
+        2.4
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "d3b273fe-9928-5574-a441-6e834e8e4b03",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R10",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25741",
+      "pins": {
+        "1": "BOOST_FB",
+        "2": "GND"
+      },
+      "xy": [
+        -23.8,
+        2.4
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "ca148c0c-4735-58d9-93a7-b36f91ded527",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R11",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25741",
+      "pins": {
+        "1": "BOOST_EN",
+        "2": "GND"
+      },
+      "xy": [
+        -25.5,
+        5
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "bf80d58d-2dfc-5f02-8a7a-b4b34c7f3a8a",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "U5",
+      "value": "TPS2553DBVR-1",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "lcsc": "C111738",
+      "pins": {
+        "1": "5V_RAW",
+        "2": "GND",
+        "3": "LED_EN",
+        "4": "LED_FAULT_N",
+        "5": "LED_ILIM",
+        "6": "LED_5V"
+      },
+      "xy": [
+        -17,
+        7
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "315cbced-d4e0-5aa7-bf4e-7a65a6483f44",
+      "names": {
+        "1": "IN",
+        "2": "GND",
+        "3": "EN",
+        "4": "FAULT_N",
+        "5": "ILIM",
+        "6": "OUT"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "power_in",
+        "3": "input",
+        "4": "open_collector",
+        "5": "passive",
+        "6": "power_out"
+      }
+    },
+    {
+      "ref": "R12",
+      "value": "49k9",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25897",
+      "pins": {
+        "1": "LED_ILIM",
+        "2": "GND"
+      },
+      "xy": [
+        -14,
+        7
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "f1c8b33a-b1d5-515d-ab20-55e6b306792f",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R13",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25741",
+      "pins": {
+        "1": "LED_EN",
+        "2": "GND"
+      },
+      "xy": [
+        -20,
+        8
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "9a052e06-484c-5bfa-9956-4804f48d1635",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R14",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25744",
+      "pins": {
+        "1": "3V3",
+        "2": "LED_FAULT_N"
+      },
+      "xy": [
+        -14,
+        10
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "b7c7be84-2dd8-503b-a78b-cb1b52d38f9b",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C77",
+      "value": "1u",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "lcsc": "C15849",
+      "pins": {
+        "1": "LED_5V",
+        "2": "GND"
+      },
+      "xy": [
+        -17,
+        11
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "d1025269-0d14-5d83-a433-b1f99ec75cc2",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "U6",
+      "value": "SN74LVC2T45DCUR",
+      "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+      "lcsc": "C15741",
+      "pins": {
+        "1": "3V3",
+        "2": "LED_DATA_3V3",
+        "3": "GND",
+        "4": "GND",
+        "5": "3V3",
+        "6": null,
+        "7": "LED_DATA_5V",
+        "8": "LED_5V"
+      },
+      "xy": [
+        -18,
+        16
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "784a7f4d-6ec8-530e-88dc-b53bf5a3ef2f",
+      "names": {
+        "1": "VCCA",
+        "2": "A1",
+        "3": "A2",
+        "4": "GND",
+        "5": "DIR",
+        "6": "B2",
+        "7": "B1",
+        "8": "VCCB"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "input",
+        "3": "input",
+        "4": "power_in",
+        "5": "input",
+        "6": "output",
+        "7": "output",
+        "8": "power_in"
+      }
+    },
+    {
+      "ref": "C78",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "lcsc": "C1525",
+      "pins": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "xy": [
+        -21,
+        14.5
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "43723a62-1375-5a46-b31e-c45906bac806",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C79",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "lcsc": "C1525",
+      "pins": {
+        "1": "LED_5V",
+        "2": "GND"
+      },
+      "xy": [
+        -15,
+        14.5
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "1108ae96-5eeb-57f6-9f49-309e09d32795",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R15",
+      "value": "33",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25105",
+      "pins": {
+        "1": "LED_DATA_5V",
+        "2": "LED_00"
+      },
+      "xy": [
+        -14,
+        18
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "79cf8670-038b-5e97-9505-1e914ec25055",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R16",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25741",
+      "pins": {
+        "1": "LED_DATA_3V3",
+        "2": "GND"
+      },
+      "xy": [
+        -22,
+        17
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "power",
+      "uuid": "f3296b7e-8d18-52ec-8c58-f6c50f2e19d9",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "U1",
+      "value": "ESP32-S3-WROOM-1U-N16R8",
+      "footprint": "TiltBoxA:ESP32-S3-WROOM-1U",
+      "lcsc": "C3013946",
+      "pins": {
+        "4": "WAKE_N",
+        "5": "IMU_INT_N",
+        "6": "I2C_SDA",
+        "7": "I2C_SCL",
+        "8": "MIC_SD",
+        "9": "MIC_EN",
+        "10": "CHG_STAT1",
+        "11": "CHG_STAT2",
+        "12": "BAT_ADC",
+        "13": "USB_DM",
+        "14": "USB_DP",
+        "15": null,
+        "16": null,
+        "17": "LED_FAULT_N",
+        "18": "BOOST_EN",
+        "19": "LED_EN",
+        "20": "LED_DATA_3V3",
+        "21": "MIC_WS",
+        "22": "MIC_BCLK",
+        "23": "VBUS_SENSE",
+        "24": null,
+        "25": null,
+        "26": null,
+        "27": "BOOT_N",
+        "28": null,
+        "29": null,
+        "30": null,
+        "31": null,
+        "32": null,
+        "33": null,
+        "34": null,
+        "35": null,
+        "36": "UART_RX",
+        "37": "UART_TX",
+        "38": null,
+        "39": null,
+        "1": "GND",
+        "2": "3V3",
+        "3": "ESP_EN",
+        "40": "GND",
+        "41": "GND"
+      },
+      "xy": [
+        13,
+        -20
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "logic",
+      "uuid": "dad3faca-9438-59b1-a3b8-dc340f775e3c",
+      "names": {
+        "4": "GPIO4",
+        "5": "GPIO5",
+        "6": "GPIO6",
+        "7": "GPIO7",
+        "8": "GPIO15",
+        "9": "GPIO16",
+        "10": "GPIO17",
+        "11": "GPIO18",
+        "12": "GPIO8",
+        "13": "GPIO19",
+        "14": "GPIO20",
+        "15": "GPIO3",
+        "16": "GPIO46",
+        "17": "GPIO9",
+        "18": "GPIO10",
+        "19": "GPIO11",
+        "20": "GPIO12",
+        "21": "GPIO13",
+        "22": "GPIO14",
+        "23": "GPIO21",
+        "24": "GPIO47",
+        "25": "GPIO48",
+        "26": "GPIO45",
+        "27": "GPIO0",
+        "28": "GPIO35",
+        "29": "GPIO36",
+        "30": "GPIO37",
+        "31": "GPIO38",
+        "32": "GPIO39",
+        "33": "GPIO40",
+        "34": "GPIO41",
+        "35": "GPIO42",
+        "36": "GPIO44",
+        "37": "GPIO43",
+        "38": "GPIO2",
+        "39": "GPIO1",
+        "1": "GND",
+        "2": "3V3",
+        "3": "EN",
+        "40": "GND",
+        "41": "EP_GND"
+      },
+      "types": {
+        "4": "bidirectional",
+        "5": "bidirectional",
+        "6": "bidirectional",
+        "7": "bidirectional",
+        "8": "bidirectional",
+        "9": "bidirectional",
+        "10": "bidirectional",
+        "11": "bidirectional",
+        "12": "bidirectional",
+        "13": "bidirectional",
+        "14": "bidirectional",
+        "15": "bidirectional",
+        "16": "bidirectional",
+        "17": "bidirectional",
+        "18": "bidirectional",
+        "19": "bidirectional",
+        "20": "bidirectional",
+        "21": "bidirectional",
+        "22": "bidirectional",
+        "23": "bidirectional",
+        "24": "bidirectional",
+        "25": "bidirectional",
+        "26": "bidirectional",
+        "27": "bidirectional",
+        "28": "bidirectional",
+        "29": "bidirectional",
+        "30": "bidirectional",
+        "31": "bidirectional",
+        "32": "bidirectional",
+        "33": "bidirectional",
+        "34": "bidirectional",
+        "35": "bidirectional",
+        "36": "bidirectional",
+        "37": "bidirectional",
+        "38": "bidirectional",
+        "39": "bidirectional",
+        "1": "power_in",
+        "2": "power_in",
+        "3": "input",
+        "40": "passive",
+        "41": "passive"
+      }
+    },
+    {
+      "ref": "C80",
+      "value": "22u",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "lcsc": "C45783",
+      "pins": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "xy": [
+        0.5,
+        -13
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "logic",
+      "uuid": "20ca6e75-1b7f-5b33-8f5c-e6900c67ced4",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C81",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "lcsc": "C1525",
+      "pins": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "xy": [
+        2,
+        -13
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "logic",
+      "uuid": "c5e300a1-9c66-5100-acfe-2abb7605380a",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R17",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25744",
+      "pins": {
+        "1": "3V3",
+        "2": "ESP_EN"
+      },
+      "xy": [
+        0.5,
+        -16.5
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "logic",
+      "uuid": "d861299f-20f3-5a60-b24e-f18e09d0d41a",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C82",
+      "value": "1u",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "lcsc": "C15849",
+      "pins": {
+        "1": "ESP_EN",
+        "2": "GND"
+      },
+      "xy": [
+        0.5,
+        -18.5
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "logic",
+      "uuid": "6e598d51-09b3-5c41-9224-328fafc3a709",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R18",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25744",
+      "pins": {
+        "1": "3V3",
+        "2": "BOOT_N"
+      },
+      "xy": [
+        6,
+        -7
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "logic",
+      "uuid": "7df909f2-e79a-5f93-8149-0106cec86299",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "SW2",
+      "value": "TS-1187A-B-A-B",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
+      "lcsc": "C318884",
+      "pins": {
+        "1": "ESP_EN",
+        "2": "GND"
+      },
+      "xy": [
+        29,
+        -8
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "logic",
+      "uuid": "8d199100-46bd-5f5b-a987-2896445f80fb",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "SW3",
+      "value": "TS-1187A-B-A-B",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
+      "lcsc": "C318884",
+      "pins": {
+        "1": "BOOT_N",
+        "2": "GND"
+      },
+      "xy": [
+        29,
+        0
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "logic",
+      "uuid": "9ced1203-b48d-5bb5-a8e9-4f4bb3c41ae3",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "SW1",
+      "value": "TS-1101VS-C-A-A",
+      "footprint": "TiltBoxA:KEY-SMD_TS-1101VS-C-A-A",
+      "lcsc": "C318936",
+      "pins": {
+        "1": "WAKE_N",
+        "2": "GND",
+        "3": "GND",
+        "4": "GND"
+      },
+      "xy": [
+        -18.259585,
+        -36.5
+      ],
+      "angle": 180,
+      "side": "B",
+      "sheet": "logic",
+      "uuid": "659661a7-7ba6-5c8a-a2b1-a5ed0e54d81e",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R19",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25741",
+      "pins": {
+        "1": "3V3",
+        "2": "WAKE_N"
+      },
+      "xy": [
+        31,
+        -12
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "logic",
+      "uuid": "5c243493-4279-5ca0-8928-761435f59dd7",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C83",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "lcsc": "C1525",
+      "pins": {
+        "1": "WAKE_N",
+        "2": "GND"
+      },
+      "xy": [
+        34,
+        -12
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "logic",
+      "uuid": "5a3598f2-2e85-592a-984c-d303887455ab",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R20",
+      "value": "1M",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C26083",
+      "pins": {
+        "1": "VBAT",
+        "2": "BAT_ADC"
+      },
+      "xy": [
+        1,
+        -9
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "logic",
+      "uuid": "b9326509-ca97-5ebd-984f-2b154e4bd525",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R21",
+      "value": "1M",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C26083",
+      "pins": {
+        "1": "BAT_ADC",
+        "2": "GND"
+      },
+      "xy": [
+        -1,
+        -9
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "logic",
+      "uuid": "e59c133f-e568-5959-809c-8461c44a9cbb",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C84",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "lcsc": "C1525",
+      "pins": {
+        "1": "BAT_ADC",
+        "2": "GND"
+      },
+      "xy": [
+        -3,
+        -9
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "logic",
+      "uuid": "7c5ab7d7-64e1-5255-b5c8-2bdb1e332cf0",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R22",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25741",
+      "pins": {
+        "1": "VBUS",
+        "2": "VBUS_SENSE"
+      },
+      "xy": [
+        7,
+        -4
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "logic",
+      "uuid": "505b8da2-de13-56d6-b9a1-7bcabefb6548",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R23",
+      "value": "150k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25755",
+      "pins": {
+        "1": "VBUS_SENSE",
+        "2": "GND"
+      },
+      "xy": [
+        10,
+        -4
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "logic",
+      "uuid": "18fa47cc-eacd-5694-94c0-1b1a43c62824",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "U7",
+      "value": "LSM6DS3TR-C",
+      "footprint": "Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y",
+      "lcsc": "C967633",
+      "pins": {
+        "1": "GND",
+        "2": "GND",
+        "3": "GND",
+        "4": "IMU_INT_N",
+        "5": "3V3",
+        "6": "GND",
+        "7": "GND",
+        "8": "3V3",
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": "3V3",
+        "13": "I2C_SCL",
+        "14": "I2C_SDA"
+      },
+      "xy": [
+        0,
+        0
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "fc34d104-8d9f-54a1-8f8d-dd539b32cd98",
+      "names": {
+        "1": "SA0",
+        "2": "SDx",
+        "3": "SCx",
+        "4": "INT1",
+        "5": "VDDIO",
+        "6": "GND",
+        "7": "GND",
+        "8": "VDD",
+        "9": "INT2",
+        "10": "NC",
+        "11": "NC",
+        "12": "CS_N",
+        "13": "SCL",
+        "14": "SDA"
+      },
+      "types": {
+        "1": "input",
+        "2": "input",
+        "3": "input",
+        "4": "output",
+        "5": "power_in",
+        "6": "power_in",
+        "7": "power_in",
+        "8": "power_in",
+        "9": "output",
+        "10": "no_connect",
+        "11": "no_connect",
+        "12": "input",
+        "13": "input",
+        "14": "bidirectional"
+      }
+    },
+    {
+      "ref": "C85",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "lcsc": "C1525",
+      "pins": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "xy": [
+        -2.8,
+        0.5
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "56cbb016-97e7-5f6b-87db-b4dadc36dcfc",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C86",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "lcsc": "C1525",
+      "pins": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "xy": [
+        2.8,
+        0.5
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "df91f0cb-7c9d-5b0b-a57d-25efbcaa777a",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C87",
+      "value": "1u",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "lcsc": "C15849",
+      "pins": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "xy": [
+        0,
+        4
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "0be682bd-57bc-548d-ac9a-16e1f0e84841",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R24",
+      "value": "4k7",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25900",
+      "pins": {
+        "1": "3V3",
+        "2": "I2C_SCL"
+      },
+      "xy": [
+        -4,
+        -3
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "62c425af-fc6f-53fa-b78f-9eea78d707ae",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R25",
+      "value": "4k7",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25900",
+      "pins": {
+        "1": "3V3",
+        "2": "I2C_SDA"
+      },
+      "xy": [
+        -1,
+        -3
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "1bf5b6b3-dd97-5285-b153-3c5e232febf9",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R26",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25741",
+      "pins": {
+        "1": "3V3",
+        "2": "IMU_INT_N"
+      },
+      "xy": [
+        2,
+        -3
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "e6e17ace-6773-5325-906b-4ac351bff32d",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "U8",
+      "value": "ICS-43434",
+      "footprint": "Sensor_Audio:InvenSense_ICS-43434-6_3.5x2.65mm",
+      "lcsc": "C5656610",
+      "pins": {
+        "1": "MIC_WS",
+        "2": "GND",
+        "3": "GND",
+        "4": "MIC_BCLK",
+        "5": "MIC_3V3",
+        "6": "MIC_SD"
+      },
+      "xy": [
+        35,
+        22
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "sensors",
+      "uuid": "baaa7660-6a9b-59b1-a927-281b0d20191a",
+      "names": {
+        "1": "WS",
+        "2": "LR",
+        "3": "GND",
+        "4": "SCK",
+        "5": "VDD",
+        "6": "SD"
+      },
+      "types": {
+        "1": "input",
+        "2": "input",
+        "3": "power_in",
+        "4": "input",
+        "5": "power_in",
+        "6": "tri_state"
+      }
+    },
+    {
+      "ref": "U9",
+      "value": "TPS22918DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "lcsc": "C131941",
+      "pins": {
+        "1": "3V3",
+        "2": "GND",
+        "3": "MIC_EN",
+        "4": null,
+        "5": "MIC_3V3",
+        "6": "MIC_3V3"
+      },
+      "xy": [
+        29,
+        18
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "9467f93e-4f60-5417-a905-4a2fb2535722",
+      "names": {
+        "1": "VIN",
+        "2": "GND",
+        "3": "ON",
+        "4": "CT",
+        "5": "QOD",
+        "6": "VOUT"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "power_in",
+        "3": "input",
+        "4": "passive",
+        "5": "passive",
+        "6": "power_out"
+      }
+    },
+    {
+      "ref": "R27",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25741",
+      "pins": {
+        "1": "MIC_EN",
+        "2": "GND"
+      },
+      "xy": [
+        26,
+        18
+      ],
+      "angle": 90,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "82398b1e-7c62-505a-88c3-d1e66cf4862d",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "R28",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "lcsc": "C25741",
+      "pins": {
+        "1": "MIC_SD",
+        "2": "GND"
+      },
+      "xy": [
+        34,
+        25
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "056addfd-d879-5174-b6e4-387b7c54ed4d",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C88",
+      "value": "1u",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "lcsc": "C15849",
+      "pins": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "xy": [
+        29,
+        14
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "bc657d1f-d1b4-5da2-8e8e-80fdd1fa70dd",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C89",
+      "value": "1u",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "lcsc": "C15849",
+      "pins": {
+        "1": "MIC_3V3",
+        "2": "GND"
+      },
+      "xy": [
+        29,
+        22
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "5ba2739f-8ada-529d-87dd-69ead1924ae5",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "C90",
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "lcsc": "C1525",
+      "pins": {
+        "1": "MIC_3V3",
+        "2": "GND"
+      },
+      "xy": [
+        35,
+        19.5
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "sensors",
+      "uuid": "42a621a8-0a8f-5e2c-9678-8e281dbcdb05",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "D1",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_01",
+        "3": "GND",
+        "4": "LED_00"
+      },
+      "xy": [
+        -29.15,
+        -29.15
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "9e99b5ca-4b59-5d00-a3aa-946d5ac7b44b",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D2",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_02",
+        "3": "GND",
+        "4": "LED_01"
+      },
+      "xy": [
+        -20.82142857142857,
+        -29.15
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "8299d2ba-1bf4-5e68-834e-bf3d7a6d1b27",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D3",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_03",
+        "3": "GND",
+        "4": "LED_02"
+      },
+      "xy": [
+        -12.492857142857144,
+        -29.15
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "68332c8b-e1ef-5912-85a7-22eb45b77821",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D4",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_04",
+        "3": "GND",
+        "4": "LED_03"
+      },
+      "xy": [
+        -4.164285714285718,
+        -29.15
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "a821b74e-a805-5b13-9829-dbae1bf6c805",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D5",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_05",
+        "3": "GND",
+        "4": "LED_04"
+      },
+      "xy": [
+        4.164285714285711,
+        -29.15
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "87dc02f4-02f5-5c58-a766-5ef83fdc7518",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D6",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_06",
+        "3": "GND",
+        "4": "LED_05"
+      },
+      "xy": [
+        12.49285714285714,
+        -29.15
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "42087e1f-e701-52f6-a6bc-f6ff9ebbd786",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D7",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_07",
+        "3": "GND",
+        "4": "LED_06"
+      },
+      "xy": [
+        20.821428571428562,
+        -29.15
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "4b64616e-4ca0-593a-aecd-79eddb24a304",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D8",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_08",
+        "3": "GND",
+        "4": "LED_07"
+      },
+      "xy": [
+        29.14999999999999,
+        -29.15
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "695d7c9d-c02a-57a0-a23c-73488a0fda97",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D9",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_09",
+        "3": "GND",
+        "4": "LED_08"
+      },
+      "xy": [
+        29.14999999999999,
+        -20.82142857142857
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "f061dde5-2336-504e-b4e9-fd7588cb1553",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D10",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_10",
+        "3": "GND",
+        "4": "LED_09"
+      },
+      "xy": [
+        20.821428571428562,
+        -20.82142857142857
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "4e6322d8-a756-5f24-8077-7a33b42c7f62",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D11",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_11",
+        "3": "GND",
+        "4": "LED_10"
+      },
+      "xy": [
+        12.49285714285714,
+        -20.82142857142857
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "8a0b6806-1d9d-5f30-a8fd-0da2637fa910",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D12",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_12",
+        "3": "GND",
+        "4": "LED_11"
+      },
+      "xy": [
+        4.164285714285711,
+        -20.82142857142857
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "4ee5e203-bd47-5fd7-a925-c9636f3d4bdb",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D13",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_13",
+        "3": "GND",
+        "4": "LED_12"
+      },
+      "xy": [
+        -4.164285714285718,
+        -20.82142857142857
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "bacd9f30-c96b-552d-9e9b-e17b35fb82ab",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D14",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_14",
+        "3": "GND",
+        "4": "LED_13"
+      },
+      "xy": [
+        -12.492857142857144,
+        -20.82142857142857
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "e2fd0bcc-bcda-5a0c-8826-bb6c37017938",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D15",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_15",
+        "3": "GND",
+        "4": "LED_14"
+      },
+      "xy": [
+        -20.82142857142857,
+        -20.82142857142857
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "43dd668c-30f6-596e-abfe-9bb9455afcfe",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D16",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_16",
+        "3": "GND",
+        "4": "LED_15"
+      },
+      "xy": [
+        -29.15,
+        -20.82142857142857
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "9675881a-172d-558d-905d-583296221cc5",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D17",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_17",
+        "3": "GND",
+        "4": "LED_16"
+      },
+      "xy": [
+        -29.15,
+        -12.492857142857144
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "8b3276fa-fd85-5711-8911-93099c9b07c3",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D18",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_18",
+        "3": "GND",
+        "4": "LED_17"
+      },
+      "xy": [
+        -20.82142857142857,
+        -12.492857142857144
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "2e7722ae-a372-5c9c-a858-656cf7c40b21",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D19",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_19",
+        "3": "GND",
+        "4": "LED_18"
+      },
+      "xy": [
+        -12.492857142857144,
+        -12.492857142857144
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "d520486b-60bb-5607-b091-94c45718aa0b",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D20",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_20",
+        "3": "GND",
+        "4": "LED_19"
+      },
+      "xy": [
+        -4.164285714285718,
+        -12.492857142857144
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "e2cebd10-a35b-5cbc-8460-29a64e15b2f6",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D21",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_21",
+        "3": "GND",
+        "4": "LED_20"
+      },
+      "xy": [
+        4.164285714285711,
+        -12.492857142857144
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "8c41dcaa-c918-5502-b70a-7ce87b33046f",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D22",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_22",
+        "3": "GND",
+        "4": "LED_21"
+      },
+      "xy": [
+        12.49285714285714,
+        -12.492857142857144
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "1c682604-7dc1-576b-8a11-e749e62b6129",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D23",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_23",
+        "3": "GND",
+        "4": "LED_22"
+      },
+      "xy": [
+        20.821428571428562,
+        -12.492857142857144
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "a759d3f3-4678-55e8-a457-537ebd4aaa5a",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D24",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_24",
+        "3": "GND",
+        "4": "LED_23"
+      },
+      "xy": [
+        29.14999999999999,
+        -12.492857142857144
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "dcf9e2f5-7f8e-5da8-93e7-3d827be588b4",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D25",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_25",
+        "3": "GND",
+        "4": "LED_24"
+      },
+      "xy": [
+        29.14999999999999,
+        -4.164285714285718
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "6580e324-1df9-55c1-bdfe-abf76aa22c4a",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D26",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_26",
+        "3": "GND",
+        "4": "LED_25"
+      },
+      "xy": [
+        20.821428571428562,
+        -4.164285714285718
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "c71a3101-eb0b-56fe-9d86-abb79c2bd413",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D27",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_27",
+        "3": "GND",
+        "4": "LED_26"
+      },
+      "xy": [
+        12.49285714285714,
+        -4.164285714285718
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "f57dbf8d-3c88-5264-ae9a-25d9368fb721",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D28",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_28",
+        "3": "GND",
+        "4": "LED_27"
+      },
+      "xy": [
+        4.164285714285711,
+        -4.164285714285718
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "0fe78967-4355-5a3b-9457-d293b6b1f421",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D29",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_29",
+        "3": "GND",
+        "4": "LED_28"
+      },
+      "xy": [
+        -4.164285714285718,
+        -4.164285714285718
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "a1e1e332-8be1-5f46-9c25-3a44e108010c",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D30",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_30",
+        "3": "GND",
+        "4": "LED_29"
+      },
+      "xy": [
+        -12.492857142857144,
+        -4.164285714285718
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "eec4334d-5f6b-56f2-b1b9-53b7ca887d6b",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D31",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_31",
+        "3": "GND",
+        "4": "LED_30"
+      },
+      "xy": [
+        -20.82142857142857,
+        -4.164285714285718
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "b1da3b32-5757-5e4e-85a2-86ba8bffc3d8",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D32",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_32",
+        "3": "GND",
+        "4": "LED_31"
+      },
+      "xy": [
+        -29.15,
+        -4.164285714285718
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_1",
+      "uuid": "2fc541d0-995b-5a04-b208-0cdebc775cda",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D33",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_33",
+        "3": "GND",
+        "4": "LED_32"
+      },
+      "xy": [
+        -29.15,
+        4.164285714285711
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "1e32481a-9201-5220-a9b4-891cc0cb7add",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D34",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_34",
+        "3": "GND",
+        "4": "LED_33"
+      },
+      "xy": [
+        -20.82142857142857,
+        4.164285714285711
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "8317a541-aac9-58e9-a9f8-976dffef273d",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D35",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_35",
+        "3": "GND",
+        "4": "LED_34"
+      },
+      "xy": [
+        -12.492857142857144,
+        4.164285714285711
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "1d3d7374-3349-50db-b924-27f45cb69f41",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D36",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_36",
+        "3": "GND",
+        "4": "LED_35"
+      },
+      "xy": [
+        -4.164285714285718,
+        4.164285714285711
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "e9d12acc-ad6a-56d4-8ef2-ae2e8fc8a28a",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D37",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_37",
+        "3": "GND",
+        "4": "LED_36"
+      },
+      "xy": [
+        4.164285714285711,
+        4.164285714285711
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "328d57c8-29be-5359-9d70-8781676bcf1c",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D38",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_38",
+        "3": "GND",
+        "4": "LED_37"
+      },
+      "xy": [
+        12.49285714285714,
+        4.164285714285711
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "1850e454-1a80-5480-80ae-339734366051",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D39",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_39",
+        "3": "GND",
+        "4": "LED_38"
+      },
+      "xy": [
+        20.821428571428562,
+        4.164285714285711
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "8490d01c-c805-51ae-a11f-a0d064082e5e",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D40",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_40",
+        "3": "GND",
+        "4": "LED_39"
+      },
+      "xy": [
+        29.14999999999999,
+        4.164285714285711
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "5283ae65-9eb7-55f2-a047-b9e8d6cdb5f0",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D41",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_41",
+        "3": "GND",
+        "4": "LED_40"
+      },
+      "xy": [
+        29.14999999999999,
+        12.49285714285714
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "7c9c4469-3efe-5efb-8a92-2da5845dc28d",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D42",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_42",
+        "3": "GND",
+        "4": "LED_41"
+      },
+      "xy": [
+        20.821428571428562,
+        12.49285714285714
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "bea3d0ff-4df2-5eb6-b1db-ad1c75de50f4",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D43",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_43",
+        "3": "GND",
+        "4": "LED_42"
+      },
+      "xy": [
+        12.49285714285714,
+        12.49285714285714
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "4077c731-f3fa-501a-bcee-043916fa51e8",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D44",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_44",
+        "3": "GND",
+        "4": "LED_43"
+      },
+      "xy": [
+        4.164285714285711,
+        12.49285714285714
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "bbca5325-4b8c-56e4-8578-946c2ba8b9ac",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D45",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_45",
+        "3": "GND",
+        "4": "LED_44"
+      },
+      "xy": [
+        -4.164285714285718,
+        12.49285714285714
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "a37769f9-c959-5ce0-b8ee-7eb6003917df",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D46",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_46",
+        "3": "GND",
+        "4": "LED_45"
+      },
+      "xy": [
+        -12.492857142857144,
+        12.49285714285714
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "29937280-7e85-5769-b44d-0efc28570b5a",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D47",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_47",
+        "3": "GND",
+        "4": "LED_46"
+      },
+      "xy": [
+        -20.82142857142857,
+        12.49285714285714
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "f45c4962-9729-55a4-a668-c0570e17a03d",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D48",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_48",
+        "3": "GND",
+        "4": "LED_47"
+      },
+      "xy": [
+        -29.15,
+        12.49285714285714
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "a05cd506-2b82-5c64-94f7-62a8ca81be9c",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D49",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_49",
+        "3": "GND",
+        "4": "LED_48"
+      },
+      "xy": [
+        -29.15,
+        20.821428571428562
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "2eee3c89-32ad-5baf-9ffc-b22a1d307872",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D50",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_50",
+        "3": "GND",
+        "4": "LED_49"
+      },
+      "xy": [
+        -20.82142857142857,
+        20.821428571428562
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "9f5f9037-1438-56a9-b36d-acfd1745fea6",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D51",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_51",
+        "3": "GND",
+        "4": "LED_50"
+      },
+      "xy": [
+        -12.492857142857144,
+        20.821428571428562
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "759e22f6-a91c-5e7b-a001-2e2dc9a6747f",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D52",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_52",
+        "3": "GND",
+        "4": "LED_51"
+      },
+      "xy": [
+        -4.164285714285718,
+        20.821428571428562
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "4ff5eabf-e51f-55ba-bcdd-d6524a846e1f",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D53",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_53",
+        "3": "GND",
+        "4": "LED_52"
+      },
+      "xy": [
+        4.164285714285711,
+        20.821428571428562
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "727d426b-7968-5382-8449-b8486699b42c",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D54",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_54",
+        "3": "GND",
+        "4": "LED_53"
+      },
+      "xy": [
+        12.49285714285714,
+        20.821428571428562
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "fe8fc839-80e1-5dcc-9b78-7a2b8e4b8d48",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D55",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_55",
+        "3": "GND",
+        "4": "LED_54"
+      },
+      "xy": [
+        20.821428571428562,
+        20.821428571428562
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "bd84a130-aa1b-57fd-9710-8d00c03560cc",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D56",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_56",
+        "3": "GND",
+        "4": "LED_55"
+      },
+      "xy": [
+        29.14999999999999,
+        20.821428571428562
+      ],
+      "angle": 180,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "f79aa4fc-2d45-5938-84bf-e4c9e809beee",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D57",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_57",
+        "3": "GND",
+        "4": "LED_56"
+      },
+      "xy": [
+        29.14999999999999,
+        29.14999999999999
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "96d19b6f-d2ca-5677-ac69-a31143d3401c",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D58",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_58",
+        "3": "GND",
+        "4": "LED_57"
+      },
+      "xy": [
+        20.821428571428562,
+        29.14999999999999
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "b010a5c9-453d-58da-b6a1-30172e0f82ce",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D59",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_59",
+        "3": "GND",
+        "4": "LED_58"
+      },
+      "xy": [
+        12.49285714285714,
+        29.14999999999999
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "c7bf811f-9a50-50d3-8362-3875c263dad1",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D60",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_60",
+        "3": "GND",
+        "4": "LED_59"
+      },
+      "xy": [
+        4.164285714285711,
+        29.14999999999999
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "6d2d4d50-5322-53ab-b314-ae7aa3f6424e",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D61",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_61",
+        "3": "GND",
+        "4": "LED_60"
+      },
+      "xy": [
+        -4.164285714285718,
+        29.14999999999999
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "ea91b2d8-32cc-5a80-be14-0c3c2b249aff",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D62",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_62",
+        "3": "GND",
+        "4": "LED_61"
+      },
+      "xy": [
+        -12.492857142857144,
+        29.14999999999999
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "6425c5b6-0bb9-5e9e-9164-9e2339617d5c",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D63",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_63",
+        "3": "GND",
+        "4": "LED_62"
+      },
+      "xy": [
+        -20.82142857142857,
+        29.14999999999999
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "2e2ebdcf-607b-59d9-88a2-606003f1d528",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "D64",
+      "value": "WS2812B-B/T (V5)",
+      "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "lcsc": "C2761795",
+      "pins": {
+        "1": "LED_5V",
+        "2": "LED_64",
+        "3": "GND",
+        "4": "LED_63"
+      },
+      "xy": [
+        -29.15,
+        29.14999999999999
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "leds_2",
+      "uuid": "c4694888-2089-54d4-bc6f-37314522e914",
+      "names": {
+        "1": "VDD",
+        "2": "DOUT",
+        "3": "GND",
+        "4": "DIN"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "output",
+        "3": "power_in",
+        "4": "input"
+      }
+    },
+    {
+      "ref": "TP1",
+      "value": "GND",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "lcsc": "",
+      "pins": {
+        "1": "GND"
+      },
+      "xy": [
+        -31,
+        28
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "657a6748-a898-5fa0-bf74-cbcc2fca7389",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "TP2",
+      "value": "VBAT",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "lcsc": "",
+      "pins": {
+        "1": "VBAT"
+      },
+      "xy": [
+        -31,
+        24
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "8a327532-bdb0-54fa-9b18-2de9998e4116",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "TP3",
+      "value": "VSYS",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "lcsc": "",
+      "pins": {
+        "1": "VSYS"
+      },
+      "xy": [
+        -31,
+        20
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "42cbad10-9144-5e4c-a811-20c2aa7ede1b",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "TP4",
+      "value": "3V3",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "lcsc": "",
+      "pins": {
+        "1": "3V3"
+      },
+      "xy": [
+        -31,
+        16
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "e5a09903-e73b-5b62-8e8d-60b1b7bcd6d1",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "TP5",
+      "value": "5V_RAW",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "lcsc": "",
+      "pins": {
+        "1": "5V_RAW"
+      },
+      "xy": [
+        -31,
+        12
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "9a934ae0-bada-58dc-ab3a-2d8837f8a714",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "TP6",
+      "value": "LED_5V",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "lcsc": "",
+      "pins": {
+        "1": "LED_5V"
+      },
+      "xy": [
+        -31,
+        8
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "45905adc-14c3-513e-bd3a-aa1caf5c7dc7",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "TP7",
+      "value": "UART_TX",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "lcsc": "",
+      "pins": {
+        "1": "UART_TX"
+      },
+      "xy": [
+        10,
+        5
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "d7146da6-bd78-57a0-bfe0-5f7af61499aa",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "TP8",
+      "value": "UART_RX",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "lcsc": "",
+      "pins": {
+        "1": "UART_RX"
+      },
+      "xy": [
+        13,
+        5
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "d2676131-2547-5c35-9eae-ece6320163bb",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "TP9",
+      "value": "ESP_EN",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "lcsc": "",
+      "pins": {
+        "1": "ESP_EN"
+      },
+      "xy": [
+        16,
+        5
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "c9cafd78-2b3d-5237-a6c7-315475cd9a58",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "TP10",
+      "value": "BOOT_N",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "lcsc": "",
+      "pins": {
+        "1": "BOOT_N"
+      },
+      "xy": [
+        19,
+        5
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "4d1655a7-396d-555a-b50c-c28eed16cec2",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "TP11",
+      "value": "LED_64",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "lcsc": "",
+      "pins": {
+        "1": "LED_64"
+      },
+      "xy": [
+        34,
+        31
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "7cd6e12d-e985-5d9e-932d-7dfe8f30ad7d",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "TP12",
+      "value": "BAT_NTC",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "lcsc": "",
+      "pins": {
+        "1": "BAT_NTC"
+      },
+      "xy": [
+        -11,
+        18
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "459f85f7-09e4-5349-ad93-ada5b1d512bc",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "TP13",
+      "value": "I2C_SDA",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "lcsc": "",
+      "pins": {
+        "1": "I2C_SDA"
+      },
+      "xy": [
+        -7,
+        2
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "7c9e3bd8-5e4d-519c-ad51-8b3742632a97",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "TP14",
+      "value": "I2C_SCL",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "lcsc": "",
+      "pins": {
+        "1": "I2C_SCL"
+      },
+      "xy": [
+        -7,
+        5
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "8f7c1124-0f95-556b-8b33-d7715957c70a",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "TP15",
+      "value": "MIC_SD",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "lcsc": "",
+      "pins": {
+        "1": "MIC_SD"
+      },
+      "xy": [
+        30,
+        27
+      ],
+      "angle": 0,
+      "side": "B",
+      "sheet": "sensors",
+      "uuid": "94fdf5ed-b333-575c-8115-b5a5cce4a84a",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "H1",
+      "value": "M3 / NPTH 3.2",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "lcsc": "",
+      "pins": {},
+      "xy": [
+        0,
+        -36.51917
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "mechanical",
+      "uuid": "ec4f1a2c-eafc-5e2d-bb02-15fd6cf66865",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "H2",
+      "value": "M3 / NPTH 3.2",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "lcsc": "",
+      "pins": {},
+      "xy": [
+        36.51917,
+        0
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "mechanical",
+      "uuid": "20b157ef-0959-58ce-b7e5-93eedb844bba",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "H3",
+      "value": "M3 / NPTH 3.2",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "lcsc": "",
+      "pins": {},
+      "xy": [
+        0,
+        36.51917
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "mechanical",
+      "uuid": "b16af718-55bf-5fe3-93d7-8f2c345f69b7",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "H4",
+      "value": "M3 / NPTH 3.2",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "lcsc": "",
+      "pins": {},
+      "xy": [
+        -36.51917,
+        0
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "mechanical",
+      "uuid": "3e0cae15-850c-5266-9ec5-38749bf38896",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "H5",
+      "value": "M3 / NPTH 3.2",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "lcsc": "",
+      "pins": {},
+      "xy": [
+        -36.51917,
+        -36.51917
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "mechanical",
+      "uuid": "735e6589-f987-50f5-a79a-cec166a5a135",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "H6",
+      "value": "M3 / NPTH 3.2",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "lcsc": "",
+      "pins": {},
+      "xy": [
+        -36.51917,
+        36.51917
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "mechanical",
+      "uuid": "19043f65-a6ef-5374-a30a-834afb059abd",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "H7",
+      "value": "M3 / NPTH 3.2",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "lcsc": "",
+      "pins": {},
+      "xy": [
+        36.51917,
+        -36.51917
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "mechanical",
+      "uuid": "52435071-083a-577e-8962-03f405cfd706",
+      "names": {},
+      "types": {}
+    },
+    {
+      "ref": "H8",
+      "value": "M3 / NPTH 3.2",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "lcsc": "",
+      "pins": {},
+      "xy": [
+        36.51917,
+        36.51917
+      ],
+      "angle": 0,
+      "side": "F",
+      "sheet": "mechanical",
+      "uuid": "8a616fd2-5df4-539c-b6a9-64fc78270237",
+      "names": {},
+      "types": {}
+    }
+  ]
+}

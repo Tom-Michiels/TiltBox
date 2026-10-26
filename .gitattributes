@@ -1,0 +1,9 @@
+# Keep manufacturing/download assets byte-identical; do not normalise line endings.
+*.pdf binary
+*.bin binary
+*.zip binary
+*.stl binary
+*.step binary
+*.STEP binary
+*.dxf binary
+*.csv -text whitespace=cr-at-eol

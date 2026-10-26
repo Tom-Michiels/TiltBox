@@ -1,0 +1,3 @@
+32e9cc42526c9a0cce693fd3cb19416198279abe647637ec66989120903b893e  bootloader.bin
+2dcd61dfc4fbbf10333ff8dd4527f32386b44b290aae524f97ed7e368674ecad  partition-table.bin
+eb55a473bd695c303aae6f003da4a6c56c6b8dc90801ae996710cdca26bd2abd  tiltbox_voice_a.bin

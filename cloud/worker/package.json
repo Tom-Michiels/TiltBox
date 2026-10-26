@@ -1,0 +1,15 @@
+{
+  "name": "tiltbox-cloud",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --ip 0.0.0.0 --port 8787",
+    "deploy": "wrangler deploy",
+    "db:init": "wrangler d1 execute tiltbox --remote --file=schema.sql",
+    "db:init:local": "wrangler d1 execute tiltbox --local --file=schema.sql",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}

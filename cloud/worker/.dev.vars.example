@@ -1,0 +1,3 @@
+OPENROUTER_API_KEY=sk-or-v1-replace-me
+DEVICE_TOKEN=choose-a-long-random-string-for-the-tiltbox
+ADMIN_TOKEN=choose-another-long-random-string-for-the-dashboard

@@ -1,0 +1,29 @@
+name = "tiltbox-cloud"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+workers_dev = true
+
+# Secrets (set with `npx wrangler secret put NAME`, or in .dev.vars for local dev):
+#   OPENROUTER_API_KEY  OpenRouter key, only ever lives here.
+#   DEVICE_TOKEN        shared token the TiltBox sends as Bearer; provision it on the device.
+#   ADMIN_TOKEN         token for the dashboard / API (?token=... or Authorization: Bearer).
+
+[vars]
+STT_MODEL = "google/gemini-2.5-flash-lite"      # must support audio input on OpenRouter
+GEN_MODEL = "anthropic/claude-sonnet-4.6"        # any OpenRouter chat model
+GEN_MAX_TOKENS = "12000"
+GEN_TEMPERATURE = "0.6"
+MOCK = "0"                                        # "1": no OpenRouter calls, canned transcript+code
+
+[[d1_databases]]
+binding = "DB"
+database_name = "tiltbox"
+# Replace with your own ID from `npx wrangler d1 create tiltbox` before deploying.
+database_id = "00000000-0000-0000-0000-000000000000"
+
+[[r2_buckets]]
+binding = "AUDIO"
+bucket_name = "tiltbox-audio"
+
+[observability]
+enabled = true
